@@ -35,7 +35,7 @@
         "button"
       ],
       "settings": {
-        "image_overlay_opacity": 55,
+        "image_overlay_opacity": 50,
         "image_height": "large",
         "desktop_content_position": "bottom-center",
         "show_text_box": false,
@@ -44,6 +44,13 @@
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": false,
         "show_text_below": false
+      }
+    },
+    "tw_marquee": {
+      "type": "tw-marquee",
+      "settings": {
+        "text": "BLACK TEES • BOLD BACK PRINTS • INDIA DROP •",
+        "color_scheme": "scheme-1"
       }
     },
     "featured_collection": {
@@ -66,17 +73,33 @@
         "padding_bottom": 24
       }
     },
-    "email_signup": {
-      "type": "email-signup-banner",
+    "newsletter": {
+      "type": "newsletter",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Get the next drop first",
+            "heading_size": "h2"
+          }
+        },
+        "paragraph": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>New designs, restocks, and early access. No spam.<\/p>"
+          }
+        },
+        "email_form": {
+          "type": "email_form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "heading",
+        "paragraph",
+        "email_form"
+      ],
       "settings": {
-        "image": "",
-        "image_overlay_opacity": 0,
-        "show_background_image": false,
-        "heading": "Get the next drop first",
-        "heading_size": "h2",
-        "text": "<p>New designs, restocks, and early access. No spam.<\/p>",
-        "text_style": "body",
-        "newsletter_button_label": "Notify me",
         "color_scheme": "scheme-1",
         "full_width": true,
         "padding_top": 24,
@@ -86,7 +109,8 @@
   },
   "order": [
     "image_banner",
+    "tw_marquee",
     "featured_collection",
-    "email_signup"
+    "newsletter"
   ]
 }

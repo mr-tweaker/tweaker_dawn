@@ -1,0 +1,53 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 8
+      }
+    },
+    "care": {
+      "type": "collapsible-content",
+      "blocks": {
+        "w1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Washing",
+            "row_content": "<ul><li>Wash inside-out<\/li><li>Cold wash<\/li><li>Gentle cycle<\/li><\/ul>",
+            "page": ""
+          }
+        },
+        "w2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Drying",
+            "row_content": "<ul><li>Hang dry for best longevity<\/li><li>Avoid high heat<\/li><\/ul>",
+            "page": ""
+          }
+        },
+        "w3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Ironing",
+            "row_content": "<p>Do not iron directly on the print. If needed, iron inside-out on low heat.<\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": ["w1", "w2", "w3"],
+      "settings": {
+        "caption": "Care",
+        "heading": "Care guide",
+        "heading_size": "h2",
+        "open_first_collapsible_row": true,
+        "layout": "none",
+        "color_scheme": "scheme-1",
+        "padding_top": 12,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": ["main", "care"]
+}
+

@@ -1,0 +1,29 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 12,
+        "padding_bottom": 0
+      }
+    },
+    "size_guide": {
+      "type": "tw-size-guide",
+      "settings": {
+        "heading": "Size guide",
+        "subheading": "Regular fit • Size up for oversized",
+        "note": "<p>Measurements are approximate. If you’re between sizes, size up.</p>",
+        "s_chest": "38",
+        "s_length": "27",
+        "m_chest": "40",
+        "m_length": "28",
+        "l_chest": "42",
+        "l_length": "29",
+        "padding_top": 12,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": ["main", "size_guide"]
+}
+

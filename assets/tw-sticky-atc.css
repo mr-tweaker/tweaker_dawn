@@ -1,0 +1,79 @@
+/* Tweaker: mobile sticky add-to-cart bar */
+.tw-sticky-atc {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 50;
+  padding: 10px 12px calc(10px + env(safe-area-inset-bottom));
+  background: rgba(8, 8, 10, 0.92);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-top: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+@media screen and (min-width: 750px) {
+  .tw-sticky-atc {
+    display: none;
+  }
+}
+
+.tw-sticky-atc__row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 10px;
+  align-items: center;
+}
+
+.tw-sticky-atc__meta {
+  min-width: 0;
+}
+
+.tw-sticky-atc__title {
+  margin: 0;
+  font-size: 1.2rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(245, 245, 245, 0.92);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.tw-sticky-atc__price {
+  margin-top: 2px;
+  font-size: 1.2rem;
+  color: rgba(170, 170, 180, 1);
+}
+
+.tw-sticky-atc__controls {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 8px;
+  align-items: center;
+}
+
+.tw-sticky-atc__select {
+  height: 40px;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.35);
+  color: rgba(245, 245, 245, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  padding: 0 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.tw-sticky-atc__button {
+  height: 40px;
+  border-radius: 999px;
+  padding: 0 14px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgb(245, 245, 245);
+  color: rgb(8, 8, 10);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-weight: 800;
+  cursor: pointer;
+}
+

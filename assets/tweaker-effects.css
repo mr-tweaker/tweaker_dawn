@@ -1,0 +1,63 @@
+/* Extra Tweaker “signature” effects: grain + marquee + hover polish */
+
+.tw-grain::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.08;
+  mix-blend-mode: overlay;
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='.35'/%3E%3C/svg%3E");
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tw-grain::before {
+    display: none;
+  }
+}
+
+.tw-marquee {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.tw-marquee__inner {
+  display: flex;
+  gap: 4rem;
+  padding: 1.1rem 0;
+  white-space: nowrap;
+  will-change: transform;
+  animation: tw-marquee 18s linear infinite;
+}
+
+.tw-marquee__text {
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: rgba(245, 245, 245, 0.9);
+}
+
+@keyframes tw-marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tw-marquee__inner { animation: none; }
+}
+
+/* Slightly nicer hover for product cards */
+@media (hover: hover) {
+  .card-wrapper .card {
+    transition: transform 160ms ease, border-color 160ms ease;
+  }
+  .card-wrapper .card:hover {
+    transform: translateY(-2px);
+    border-color: rgba(82, 207, 255, 0.35);
+  }
+}
+

@@ -1,0 +1,53 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 12
+      }
+    },
+    "faq": {
+      "type": "collapsible-content",
+      "blocks": {
+        "q1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How long does shipping take?",
+            "row_content": "<p>Dispatch times vary by batch. You’ll see an estimate at checkout.</p>",
+            "page": ""
+          }
+        },
+        "q2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can I exchange sizes?",
+            "row_content": "<p>If you need help choosing a size, message us before ordering. Exchange policy depends on the drop; see Shipping & Returns.</p>",
+            "page": ""
+          }
+        },
+        "q3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How do I care for the print?",
+            "row_content": "<ul><li>Wash inside-out</li><li>Cold wash</li><li>Do not iron directly on print</li><li>Hang dry</li></ul>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": ["q1", "q2", "q3"],
+      "settings": {
+        "caption": "FAQ",
+        "heading": "Questions",
+        "heading_size": "h2",
+        "open_first_collapsible_row": false,
+        "layout": "none",
+        "color_scheme": "scheme-1",
+        "padding_top": 12,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": ["main", "faq"]
+}
+

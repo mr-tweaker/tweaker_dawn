@@ -112,6 +112,14 @@
         "padding_bottom": 12
       }
     },
+    "tw-sticky-atc": {
+      "type": "tw-sticky-atc",
+      "settings": {}
+    },
+    "tw-back-print-placement": {
+      "type": "tw-back-print-placement",
+      "settings": {}
+    },
     "image-with-text": {
       "type": "image-with-text",
       "blocks": {
@@ -209,6 +217,8 @@
   },
   "order": [
     "main",
+    "tw-sticky-atc",
+    "tw-back-print-placement",
     "image-with-text",
     "multicolumn",
     "related-products"

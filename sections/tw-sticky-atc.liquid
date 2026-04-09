@@ -1,0 +1,55 @@
+{{ 'tw-sticky-atc.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
+
+{%- if request.page_type == 'product' -%}
+  <div class="tw-sticky-atc" role="region" aria-label="Quick add to cart">
+    <div class="page-width">
+      <div class="tw-sticky-atc__row">
+        <div class="tw-sticky-atc__meta">
+          <p class="tw-sticky-atc__title">{{ product.title | escape }}</p>
+          <div class="tw-sticky-atc__price">
+            {%- render 'price', product: product, use_variant: true, show_badges: false -%}
+          </div>
+        </div>
+
+        <div class="tw-sticky-atc__controls">
+          <product-form>
+            {%- form 'product', product, class: 'form', novalidate: 'novalidate' -%}
+              <input type="hidden" name="quantity" value="1">
+              <select class="tw-sticky-atc__select" name="id" aria-label="Size">
+                {%- for v in product.variants -%}
+                  <option value="{{ v.id }}" {% if v.id == product.selected_or_first_available_variant.id %}selected{% endif %} {% unless v.available %}disabled{% endunless %}>
+                    {{ v.title | escape }}{% unless v.available %} — Sold out{% endunless %}
+                  </option>
+                {%- endfor -%}
+              </select>
+              <button type="submit" name="add" class="tw-sticky-atc__button">
+                <span>Add</span>
+                <span class="sold-out-message hidden">{{ 'products.product.sold_out' | t }}</span>
+                <div class="loading__spinner hidden">
+                  <span class="svg-wrapper">{{- 'loading-spinner.svg' | inline_asset_content -}}</span>
+                </div>
+              </button>
+            {%- endform -%}
+          </product-form>
+        </div>
+      </div>
+    </div>
+  </div>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "TW sticky ATC",
+  "tag": "section",
+  "class": "section",
+  "enabled_on": {
+    "templates": ["product"]
+  },
+  "settings": [],
+  "presets": [
+    { "name": "Tweaker sticky add to cart" }
+  ]
+}
+{% endschema %}
+

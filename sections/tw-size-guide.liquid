@@ -1,0 +1,80 @@
+<div class="page-width section-{{ section.id }}-padding">
+  <div class="rte">
+    <h1 class="h1">{{ section.settings.heading | escape }}</h1>
+    <p style="color: rgba(170,170,180,1); letter-spacing: .08em; text-transform: uppercase;">
+      {{ section.settings.subheading | escape }}
+    </p>
+  </div>
+
+  <div class="content-container" style="border: 1px solid rgba(255,255,255,.10); border-radius: 16px; padding: 18px;">
+    <div class="rte">
+      {{ section.settings.note }}
+    </div>
+    <div style="overflow:auto; margin-top: 14px;">
+      <table style="width:100%; min-width: 560px; border-collapse: collapse;">
+        <thead>
+          <tr>
+            <th style="text-align:left; padding: 10px; border-bottom: 1px solid rgba(255,255,255,.12);">Size</th>
+            <th style="text-align:left; padding: 10px; border-bottom: 1px solid rgba(255,255,255,.12);">Chest (in)</th>
+            <th style="text-align:left; padding: 10px; border-bottom: 1px solid rgba(255,255,255,.12);">Length (in)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,.06);">S</td>
+            <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,.06);">{{ section.settings.s_chest }}</td>
+            <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,.06);">{{ section.settings.s_length }}</td>
+          </tr>
+          <tr>
+            <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,.06);">M</td>
+            <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,.06);">{{ section.settings.m_chest }}</td>
+            <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,.06);">{{ section.settings.m_length }}</td>
+          </tr>
+          <tr>
+            <td style="padding: 10px;">L</td>
+            <td style="padding: 10px;">{{ section.settings.l_chest }}</td>
+            <td style="padding: 10px;">{{ section.settings.l_length }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+{% schema %}
+{
+  "name": "Tweaker size guide",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Size guide" },
+    { "type": "text", "id": "subheading", "label": "Subheading", "default": "Regular fit • Size up for oversized" },
+    { "type": "richtext", "id": "note", "label": "Note", "default": "<p>Measurements are approximate. If you’re between sizes, size up.</p>" },
+    { "type": "text", "id": "s_chest", "label": "S chest", "default": "38" },
+    { "type": "text", "id": "s_length", "label": "S length", "default": "27" },
+    { "type": "text", "id": "m_chest", "label": "M chest", "default": "40" },
+    { "type": "text", "id": "m_length", "label": "M length", "default": "28" },
+    { "type": "text", "id": "l_chest", "label": "L chest", "default": "42" },
+    { "type": "text", "id": "l_length", "label": "L length", "default": "29" },
+    { "type": "range", "id": "padding_top", "min": 0, "max": 100, "step": 4, "unit": "px", "label": "Padding top", "default": 28 },
+    { "type": "range", "id": "padding_bottom", "min": 0, "max": 100, "step": 4, "unit": "px", "label": "Padding bottom", "default": 28 }
+  ],
+  "presets": [
+    { "name": "Tweaker size guide" }
+  ]
+}
+{% endschema %}
+
