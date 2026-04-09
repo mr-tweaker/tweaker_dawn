@@ -1,0 +1,175 @@
+/* Tweaker theme overrides for Dawn.
+   Keep changes isolated here to ease Dawn upgrades. */
+
+:root {
+  --tw-bg: 8, 8, 10;
+  --tw-fg: 245, 245, 245;
+  --tw-muted: 170, 170, 180;
+  --tw-accent: 82, 207, 255; /* electric blue */
+  --tw-border: 255, 255, 255;
+  --tw-radius: 14px;
+}
+
+/* Prefer a dark, high-contrast global aesthetic. */
+body.gradient {
+  background: rgb(var(--tw-bg));
+}
+
+body,
+.color-background-1,
+.color-background-2,
+.color-background-3,
+.color-background-4 {
+  --color-background: var(--tw-bg);
+  --color-foreground: var(--tw-fg);
+}
+
+/* Links + subtle text */
+a,
+.link,
+.link--text,
+.link-with-icon {
+  color: rgba(var(--tw-fg), 0.92);
+}
+
+.caption,
+.caption-with-letter-spacing,
+.product__tax,
+.product__info-container .share-button__button,
+.breadcrumbs a,
+.breadcrumbs span {
+  color: rgba(var(--tw-muted), 1);
+}
+
+/* Layout: a bit wider + cleaner spacing */
+.page-width {
+  max-width: min(140rem, calc(var(--page-width) + 16rem));
+}
+
+/* Header: cleaner, more “streetwear” */
+.header-wrapper {
+  background: rgba(var(--tw-bg), 0.9);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(var(--tw-border), 0.08);
+}
+
+.header__heading-link,
+.header__menu-item,
+.header__icon {
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+/* Announcement bar */
+.announcement-bar {
+  background: rgb(var(--tw-bg));
+  color: rgba(var(--tw-fg), 0.95);
+  border-bottom: 1px solid rgba(var(--tw-border), 0.08);
+}
+
+.announcement-bar__message {
+  font-size: 1.2rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+/* Buttons: crisp, premium */
+.button,
+.shopify-payment-button__button--unbranded,
+.shopify-payment-button__button--hidden {
+  border-radius: var(--tw-radius);
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-weight: 700;
+}
+
+.button--primary,
+.shopify-payment-button__button--unbranded {
+  background: rgb(var(--tw-fg)) !important;
+  color: rgb(var(--tw-bg)) !important;
+  border: 1px solid rgba(var(--tw-border), 0.14);
+}
+
+.button--secondary {
+  background: transparent !important;
+  color: rgba(var(--tw-fg), 0.92) !important;
+  border: 1px solid rgba(var(--tw-border), 0.18) !important;
+}
+
+.button--secondary:hover,
+.button--secondary:focus-visible {
+  border-color: rgba(var(--tw-border), 0.35) !important;
+}
+
+/* Product cards: big images, subtle border */
+.card-wrapper .card {
+  border-radius: calc(var(--tw-radius) + 4px);
+  border: 1px solid rgba(var(--tw-border), 0.10);
+  background: rgba(var(--tw-bg), 1);
+}
+
+.card-wrapper .media {
+  border-radius: calc(var(--tw-radius) + 4px);
+}
+
+.card__heading,
+.card-information__text,
+.price,
+.price-item {
+  color: rgba(var(--tw-fg), 0.95) !important;
+}
+
+.card__heading a {
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* Reduce “busy” outlines/shadows in dark mode */
+.global-media-settings,
+.content-container,
+.card,
+.card__inner {
+  box-shadow: none !important;
+}
+
+/* Product page: make it feel premium */
+.product__title h1 {
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.product__description,
+.rte {
+  color: rgba(var(--tw-fg), 0.86);
+}
+
+/* Variant pills */
+.variant-pills input[type='radio'] + label {
+  border-radius: 999px;
+  border-color: rgba(var(--tw-border), 0.18);
+  color: rgba(var(--tw-fg), 0.9);
+  background: rgba(var(--tw-bg), 1);
+}
+
+.variant-pills input[type='radio']:checked + label {
+  border-color: rgba(var(--tw-accent), 0.9);
+  box-shadow: 0 0 0 2px rgba(var(--tw-accent), 0.15);
+}
+
+/* Footer */
+.footer {
+  border-top: 1px solid rgba(var(--tw-border), 0.08);
+  background: rgb(var(--tw-bg));
+}
+
+.footer a,
+.footer__content-top,
+.footer__content-bottom {
+  color: rgba(var(--tw-muted), 1);
+}
+
+.footer a:hover {
+  color: rgba(var(--tw-fg), 0.92);
+}
+

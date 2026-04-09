@@ -45,27 +45,27 @@
         "collapsible-row-0": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Materials",
+            "heading": "Size & Fit",
             "icon": "leather",
-            "content": "",
+            "content": "<p><strong>Fit<\/strong>: Regular<\/p><p><strong>Sizes<\/strong>: S / M / L<\/p><p>Need help? Choose your usual size for a regular fit. Size up for an oversized feel.<\/p>",
             "page": ""
           }
         },
         "collapsible-row-1": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Shipping & Returns",
+            "heading": "Printing",
             "icon": "truck",
-            "content": "",
+            "content": "<p><strong>Print<\/strong>: DTF (fused) back print<\/p><p>High-contrast artwork on black cotton. Placement may vary slightly between pieces.<\/p>",
             "page": ""
           }
         },
         "collapsible-row-2": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Dimensions",
+            "heading": "Shipping & Returns",
             "icon": "ruler",
-            "content": "",
+            "content": "<p>Shipping timelines and return eligibility are shown at checkout and in our policies. Made-to-order items may have slightly longer dispatch times.<\/p>",
             "page": ""
           }
         },
@@ -74,7 +74,7 @@
           "settings": {
             "heading": "Care Instructions",
             "icon": "heart",
-            "content": "",
+            "content": "<ul><li>Wash inside-out<\/li><li>Cold wash<\/li><li>Do not iron directly on print<\/li><li>Hang dry for best longevity<\/li><\/ul>",
             "page": ""
           }
         },
@@ -153,8 +153,8 @@
         "column-0": {
           "type": "column",
           "settings": {
-            "title": "Free Shipping",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "title": "India Shipping",
+            "text": "<p>Shipping across India. Dispatch times vary by batch.<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -162,8 +162,8 @@
         "column-1": {
           "type": "column",
           "settings": {
-            "title": "Hassle-Free Exchanges",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "title": "Support",
+            "text": "<p>Questions? Message us before ordering for sizing help.<\/p>",
             "link_label": "",
             "link": ""
           }
