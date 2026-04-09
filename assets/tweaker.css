@@ -24,6 +24,36 @@ body,
   --color-foreground: var(--tw-fg);
 }
 
+/* Dawn uses `.color-<scheme-id>` classes (e.g. `.color-scheme-1`). Override them too,
+   otherwise sections can render dark text on a dark background. */
+.color-scheme-1,
+.color-scheme-2,
+.color-scheme-3,
+.color-scheme-4,
+.color-scheme-5 {
+  --color-background: var(--tw-bg) !important;
+  --color-foreground: var(--tw-fg) !important;
+  --color-shadow: 0, 0, 0 !important;
+  --color-background-contrast: 255, 255, 255 !important;
+  --color-link: var(--tw-accent) !important;
+  --gradient-background: rgb(var(--tw-bg)) !important;
+}
+
+/* Ensure any gradient containers don’t render white backgrounds. */
+.gradient {
+  background: rgb(var(--tw-bg));
+}
+
+/* Product info column can pick up a light content-container; force dark. */
+.product__info-wrapper,
+.product__info-container,
+.product__info-container .content-container,
+.product__info-container .product__description,
+.product__info-container .accordion,
+.product__info-container details {
+  background: transparent;
+}
+
 /* Links + subtle text */
 a,
 .link,
