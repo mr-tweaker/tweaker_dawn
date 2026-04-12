@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -11,7 +20,8 @@
           }
         },
         "title": {
-          "type": "title"
+          "type": "title",
+          "settings": {}
         },
         "caption": {
           "type": "text",
@@ -21,7 +31,8 @@
           }
         },
         "price": {
-          "type": "price"
+          "type": "price",
+          "settings": {}
         },
         "variant_picker": {
           "type": "variant_picker",
@@ -30,7 +41,8 @@
           }
         },
         "quantity_selector": {
-          "type": "quantity_selector"
+          "type": "quantity_selector",
+          "settings": {}
         },
         "buy_buttons": {
           "type": "buy_buttons",
@@ -40,14 +52,15 @@
           }
         },
         "description": {
-          "type": "description"
+          "type": "description",
+          "settings": {}
         },
         "collapsible-row-0": {
           "type": "collapsible_tab",
           "settings": {
             "heading": "Size & Fit",
             "icon": "leather",
-            "content": "<p><strong>Fit<\/strong>: Regular<\/p><p><strong>Sizes<\/strong>: S / M / L<\/p><p>Need help? Choose your usual size for a regular fit. Size up for an oversized feel.<\/p>",
+            "content": "<p><strong>Fit</strong>: Regular</p><p><strong>Sizes</strong>: XS / S / M / L / XL / XXL</p><p>Need help? Choose your usual size for a regular fit. Size up for an oversized feel.</p>",
             "page": ""
           }
         },
@@ -56,7 +69,7 @@
           "settings": {
             "heading": "Printing",
             "icon": "truck",
-            "content": "<p><strong>Print<\/strong>: DTF (fused) back print<\/p><p>High-contrast artwork on black cotton. Placement may vary slightly between pieces.<\/p>",
+            "content": "<p><strong>Print</strong>: Rubber back print</p><p>Crisp, high-contrast artwork on black cotton. Placement may vary slightly between pieces.</p>",
             "page": ""
           }
         },
@@ -65,7 +78,7 @@
           "settings": {
             "heading": "Shipping & Returns",
             "icon": "ruler",
-            "content": "<p>Shipping timelines and return eligibility are shown at checkout and in our policies. Made-to-order items may have slightly longer dispatch times.<\/p>",
+            "content": "<p>Shipping timelines and return eligibility are shown at checkout and in our policies. Made-to-order items may have slightly longer dispatch times.</p>",
             "page": ""
           }
         },
@@ -74,7 +87,7 @@
           "settings": {
             "heading": "Care Instructions",
             "icon": "heart",
-            "content": "<ul><li>Wash inside-out<\/li><li>Cold wash<\/li><li>Do not iron directly on print<\/li><li>Hang dry for best longevity<\/li><\/ul>",
+            "content": "<ul><li>Wash inside-out</li><li>Cold wash</li><li>Do not iron directly on print</li><li>Hang dry for best longevity</li></ul>",
             "page": ""
           }
         },
@@ -102,9 +115,9 @@
       ],
       "settings": {
         "enable_sticky_info": true,
-        "gallery_layout": "stacked",
         "media_size": "large",
         "constrain_to_viewport": true,
+        "gallery_layout": "stacked",
         "mobile_thumbnails": "hide",
         "hide_variants": true,
         "enable_video_looping": false,
@@ -116,45 +129,6 @@
       "type": "tw-sticky-atc",
       "settings": {}
     },
-    "tw-back-print-placement": {
-      "type": "tw-back-print-placement",
-      "settings": {}
-    },
-    "image-with-text": {
-      "type": "image-with-text",
-      "blocks": {
-        "image-with-text-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Image with text",
-            "heading_size": "h1"
-          }
-        },
-        "image-with-text-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "image-with-text-0",
-        "image-with-text-1"
-      ],
-      "settings": {
-        "height": "small",
-        "desktop_image_width": "medium",
-        "layout": "text_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "color_scheme": "scheme-2",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "multicolumn": {
       "type": "multicolumn",
       "blocks": {
@@ -162,7 +136,7 @@
           "type": "column",
           "settings": {
             "title": "India Shipping",
-            "text": "<p>Shipping across India. Dispatch times vary by batch.<\/p>",
+            "text": "<p>Shipping across India. Dispatch times vary by batch.</p>",
             "link_label": "",
             "link": ""
           }
@@ -171,7 +145,7 @@
           "type": "column",
           "settings": {
             "title": "Support",
-            "text": "<p>Questions? Message us before ordering for sizing help.<\/p>",
+            "text": "<p>Questions? Message us before ordering for sizing help.</p>",
             "link_label": "",
             "link": ""
           }
@@ -186,14 +160,14 @@
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
         "columns_desktop": 2,
         "column_alignment": "left",
         "background_style": "none",
-        "button_label": "",
-        "button_link": "",
-        "swipe_on_mobile": false,
         "color_scheme": "scheme-1",
         "columns_mobile": "1",
+        "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -204,12 +178,12 @@
         "heading": "You may also like",
         "heading_size": "h2",
         "columns_desktop": 4,
+        "columns_mobile": "2",
         "color_scheme": "scheme-1",
         "image_ratio": "square",
         "show_secondary_image": true,
         "show_vendor": false,
         "show_rating": false,
-        "columns_mobile": "2",
         "padding_top": 36,
         "padding_bottom": 28
       }
@@ -218,8 +192,6 @@
   "order": [
     "main",
     "tw-sticky-atc",
-    "tw-back-print-placement",
-    "image-with-text",
     "multicolumn",
     "related-products"
   ]

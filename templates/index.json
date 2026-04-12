@@ -1,13 +1,208 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
+    "slideshow_iChpeK": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_T4UUdK": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/tweaker-hero-final-16x9-02-6ZTFB9XSENg.jpg",
+            "image_overlay_opacity": 0,
+            "product": "",
+            "heading_override": "",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-1"
+          }
+        },
+        "slide_33yNEr": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/tweaker-hero-final-16x9-04-RRJvAYHW75k.jpg",
+            "image_overlay_opacity": 0,
+            "product": "",
+            "heading_override": "",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-1"
+          }
+        },
+        "slide_DjtBUH": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/tweaker-hero-final-16x9-07-tJTB9KqYxxY.jpg",
+            "image_overlay_opacity": 0,
+            "product": "",
+            "heading_override": "",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-1"
+          }
+        },
+        "slide_GPzRPz": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/tweaker-hero-final-16x9-08-zLn8BUg1dFc.jpg",
+            "image_overlay_opacity": 0,
+            "product": "",
+            "heading_override": "",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-1"
+          }
+        },
+        "slide_7qPgA8": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/tweaker-hero-final-16x9-06-mU4EBr1xbms.jpg",
+            "image_overlay_opacity": 0,
+            "product": "",
+            "heading_override": "",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-1"
+          }
+        },
+        "slide_yBhpDA": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/tweaker-hero-final-16x9-01--DYzYD2-23g.jpg",
+            "image_overlay_opacity": 0,
+            "product": "",
+            "heading_override": "",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-1"
+          }
+        },
+        "slide_BiBQdW": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/tweaker-hero-final-16x9-03-G3N0uixmPy0.jpg",
+            "image_overlay_opacity": 0,
+            "product": "",
+            "heading_override": "",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": ""
+          }
+        },
+        "slide_NHPGac": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/tweaker-hero-final-16x9-05-ZBb02ANHYUo.jpg",
+            "image_overlay_opacity": 0,
+            "product": "",
+            "heading_override": "",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_T4UUdK",
+        "slide_33yNEr",
+        "slide_DjtBUH",
+        "slide_GPzRPz",
+        "slide_7qPgA8",
+        "slide_yBhpDA",
+        "slide_BiBQdW",
+        "slide_NHPGac"
+      ],
+      "name": "t:sections.slideshow.presets.name",
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "large",
+        "slider_visual": "dots",
+        "auto_rotate": true,
+        "change_slides_speed": 5,
+        "image_behavior": "ambient",
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
     "image_banner": {
       "type": "image-banner",
       "blocks": {
-        "heading": {
+        "heading_z4Jp3Q": {
           "type": "heading",
           "settings": {
-            "heading": "Tweaker",
-            "heading_size": "h0"
+            "heading": "Tweaker's Shop",
+            "heading_size": "h1"
           }
         },
         "text": {
@@ -30,19 +225,22 @@
         }
       },
       "block_order": [
-        "heading",
+        "heading_z4Jp3Q",
         "text",
         "button"
       ],
+      "disabled": true,
       "settings": {
+        "image": "shopify://shop_images/tweaker-logo-square-2048-white-on-black-flat.jpg",
         "image_overlay_opacity": 50,
         "image_height": "large",
+        "image_behavior": "none",
         "desktop_content_position": "bottom-center",
-        "show_text_box": false,
         "desktop_content_alignment": "center",
+        "show_text_box": false,
         "color_scheme": "scheme-1",
-        "mobile_content_alignment": "center",
         "stack_images_on_mobile": false,
+        "mobile_content_alignment": "center",
         "show_text_below": false
       }
     },
@@ -56,61 +254,36 @@
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
-        "title": "Drop",
-        "heading_size": "h2",
         "collection": "all",
         "products_to_show": 12,
+        "title": "Drop",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
         "columns_desktop": 4,
-        "color_scheme": "scheme-1",
+        "enable_desktop_slider": false,
+        "full_width": false,
         "show_view_all": true,
-        "swipe_on_mobile": false,
+        "view_all_style": "solid",
+        "color_scheme": "scheme-1",
         "image_ratio": "adapt",
+        "image_shape": "default",
         "show_secondary_image": true,
         "show_vendor": false,
         "show_rating": false,
+        "quick_add": "none",
         "columns_mobile": "2",
+        "swipe_on_mobile": false,
         "padding_top": 20,
-        "padding_bottom": 24
-      }
-    },
-    "newsletter": {
-      "type": "newsletter",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Get the next drop first",
-            "heading_size": "h2"
-          }
-        },
-        "paragraph": {
-          "type": "paragraph",
-          "settings": {
-            "text": "<p>New designs, restocks, and early access. No spam.<\/p>"
-          }
-        },
-        "email_form": {
-          "type": "email_form",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "heading",
-        "paragraph",
-        "email_form"
-      ],
-      "settings": {
-        "color_scheme": "scheme-1",
-        "full_width": true,
-        "padding_top": 24,
         "padding_bottom": 24
       }
     }
   },
   "order": [
+    "slideshow_iChpeK",
     "image_banner",
     "tw_marquee",
-    "featured_collection",
-    "newsletter"
+    "featured_collection"
   ]
 }

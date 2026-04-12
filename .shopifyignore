@@ -1,0 +1,4 @@
+# Do not overwrite the live homepage JSON from git.
+# Customizations in the theme editor (slideshow slides, hidden sections, block order)
+# live in templates/index.json on Shopify; pushing a local copy resets them.
+# templates/index.json

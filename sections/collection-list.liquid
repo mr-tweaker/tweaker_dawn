@@ -24,7 +24,13 @@
   endif
 -%}
 
-<div class="color-{{ section.settings.color_scheme }} gradient">
+<div
+  class="color-{{ section.settings.color_scheme }} gradient"
+  {% assign collection_list_anchor = section.settings.anchor_id | strip %}
+  {% if collection_list_anchor != blank and collection_list_anchor != '—' %}
+    id="{{ collection_list_anchor | escape }}"
+  {% endif %}
+>
   <div class="collection-list-wrapper page-width isolate{% if show_mobile_slider %} page-width-desktop{% endif %}{% if section.settings.title == blank %} no-heading{% endif %}{% if section.settings.show_view_all == false or section.blocks.size > collections.size %} no-mobile-link{% endif %} section-{{ section.id }}-padding">
     {%- unless section.settings.title == blank -%}
       <div class="title-wrapper-with-link{% if show_mobile_slider %} title-wrapper--self-padded-tablet-down{% else %} title-wrapper--self-padded-mobile{% endif %} title-wrapper--no-top-margin">
@@ -148,6 +154,13 @@
       "id": "title",
       "default": "t:sections.collection-list.settings.title.default",
       "label": "t:sections.collection-list.settings.title.label"
+    },
+    {
+      "type": "text",
+      "id": "anchor_id",
+      "label": "Section anchor ID",
+      "info": "Optional. Leave as — to disable. Otherwise use a short handle (e.g. shop-by-category) for links like yourstore.com/#shop-by-category.",
+      "default": "—"
     },
     {
       "type": "select",

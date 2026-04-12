@@ -22,8 +22,8 @@
         "footer-2": {
           "type": "text",
           "settings": {
-            "heading": "Our mission",
-            "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
+            "heading": "About",
+            "subtext": "<p>Independent tees with bold back prints. India shipping. Questions? Message us.<\/p>"
           }
         }
       },
@@ -34,7 +34,7 @@
       ],
       "settings": {
         "color_scheme": "scheme-1",
-        "newsletter_enable": true,
+        "newsletter_enable": false,
         "newsletter_heading": "Subscribe to our emails",
         "show_social": true,
         "enable_country_selector": false,
