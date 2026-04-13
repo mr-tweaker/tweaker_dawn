@@ -3,6 +3,8 @@
   grid-template-columns: repeat(2, auto);
   grid-template-rows: repeat(2, auto);
   padding-top: 1rem;
+  position: relative;
+  z-index: 10;
 }
 
 .active-facets-mobile {
@@ -115,6 +117,13 @@
   padding-right: 1.75rem;
 }
 
+/* Ensure native select dropdown options remain readable (especially on dark schemes). */
+.facet-filters__sort option,
+.mobile-facets__sort .select__select option {
+  color: #fff;
+  background-color: #000;
+}
+
 .facet-filters__sort + .icon-caret {
   right: 0;
 }
@@ -165,7 +174,7 @@
   display: grid;
   gap: 0 3.5rem;
   grid-template-columns: 1fr max-content max-content;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .facets__wrapper {

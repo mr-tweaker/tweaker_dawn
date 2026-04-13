@@ -11,6 +11,7 @@
   "current": {
     "logo": "shopify://shop_images/tweaker-logo-square-2048-white-on-black-flat.jpg",
     "logo_width": 70,
+    "favicon": "shopify://shop_images/tweaker-logo-square-2048-white-on-black-flat.jpg",
     "type_header_font": "assistant_n4",
     "heading_scale": 100,
     "type_body_font": "assistant_n4",
@@ -104,8 +105,8 @@
     "badge_corner_radius": 40,
     "sale_badge_color_scheme": "scheme-5",
     "sold_out_badge_color_scheme": "scheme-3",
-    "social_facebook_link": "",
-    "social_instagram_link": "",
+    "social_facebook_link": "https://www.facebook.com/profile.php?id=61572114001825",
+    "social_instagram_link": "https://www.instagram.com/shoptweaker/",
     "social_youtube_link": "",
     "social_tiktok_link": "",
     "social_twitter_link": "",

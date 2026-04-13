@@ -23,6 +23,13 @@
     {%- else -%}
       <h2 class="visually-hidden">{{ 'templates.contact.form.title' | t }}</h2>
     {%- endif -%}
+    <div class="rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+      <p>
+        <strong>WhatsApp:</strong> <a href="https://wa.me/918796912557">+91 8796912557</a><br>
+        <strong>Call:</strong> <a href="tel:+918796912557">+91 8796912557</a><br>
+        <strong>Email:</strong> <a href="mailto:hello@shoptweaker.com">hello@shoptweaker.com</a>
+      </p>
+    </div>
     {%- liquid
       assign contact_form_class = 'isolate'
       if settings.animations_reveal_on_scroll

@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "name": "t:sections.footer.name",
   "type": "footer",
@@ -23,7 +32,7 @@
           "type": "text",
           "settings": {
             "heading": "About",
-            "subtext": "<p>Independent tees with bold back prints. India shipping. Questions? Message us.<\/p>"
+            "subtext": "<p>Independent tees with bold back prints. India shipping.</p><p><strong>Contact</strong><br/><a href=\"https://wa.me/918796912557\">WhatsApp: +91 8796912557</a><br/><a href=\"tel:+918796912557\">Call: +91 8796912557</a><br/><a href=\"mailto:hello@shoptweaker.com\" title=\"mailto:hello@shoptweaker.com\">hello@shoptweaker.com</a></p>"
           }
         }
       },
@@ -36,10 +45,11 @@
         "color_scheme": "scheme-1",
         "newsletter_enable": false,
         "newsletter_heading": "Subscribe to our emails",
+        "enable_follow_on_shop": true,
         "show_social": true,
         "enable_country_selector": false,
         "enable_language_selector": false,
-        "payment_enable": true,
+        "payment_enable": false,
         "show_policy": false,
         "margin_top": 48,
         "padding_top": 36,
